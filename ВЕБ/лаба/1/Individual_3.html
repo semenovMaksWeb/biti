@@ -1,0 +1,84 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img width="120" height="120" src="https://javasea.ru/uploads/posts/2018-06/1528881411_fon-iz-cvetnyh-luchey.jpg" style="display: none;">
+    <img width="120" height="120" src="https://s2.best-wallpaper.net/wallpaper/2560x1440/1307/Canada-Yoho-lake-forest-mountains-trees-reflection_2560x1440.jpg" style="display: none;">
+    <button class="button1">1</button>
+    <button class="button2">2</button>
+    <script>
+        let timerId = null;
+        let imgVisible = null;
+        const button1 =  $(".button1"); 
+        button1[0].onclick = function() {
+            clearTimeout(timerId);
+            timerId = setInterval(()=>{
+                console.log("я?");
+                if(imgVisible == null || imgVisible == 2){
+                    imgVisible = 1;
+                    $("img")[0].style = "display: block";
+                    $("img")[1].style = "display: none";
+                }else {
+                    imgVisible = 2;
+                    $("img")[1].style = "display: block";
+                    $("img")[0].style = "display: none";
+                }
+            }, 2000)
+        };
+        
+        $(".button2")[0].onclick = function() {
+            clearTimeout(timerId);
+            $("img")[0].style = "display: block";
+            $("img")[1].style = "display: block";
+        };
+    </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img width="120" height="120" src="https://javasea.ru/uploads/posts/2018-06/1528881411_fon-iz-cvetnyh-luchey.jpg" style="display: none;">
+    <img width="120" height="120" src="https://s2.best-wallpaper.net/wallpaper/2560x1440/1307/Canada-Yoho-lake-forest-mountains-trees-reflection_2560x1440.jpg" style="display: none;">
+    <button class="button1">1</button>
+    <button class="button2">2</button>
+    <script>
+        let timerId = null;
+        let imgVisible = null;
+        const button1 =  $(".button1"); 
+        button1[0].onclick = function() {
+            clearTimeout(timerId);
+            timerId = setInterval(()=>{
+                console.log("я?");
+                if(imgVisible == null || imgVisible == 2){
+                    imgVisible = 1;
+                    $("img")[0].style = "display: block";
+                    $("img")[1].style = "display: none";
+                }else {
+                    imgVisible = 2;
+                    $("img")[1].style = "display: block";
+                    $("img")[0].style = "display: none";
+                }
+            }, 2000)
+        };
+        
+        $(".button2")[0].onclick = function() {
+            clearTimeout(timerId);
+            $("img")[0].style = "display: block";
+            $("img")[1].style = "display: block";
+        };
+    </script>
+</body>
+>>>>>>> c51345fcdb90265f01df58930fb8ebacc5ff995e
+</html>

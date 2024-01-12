@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Новости</title>
+    <link href="../css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <form action="" name="register">
+                <div class="form-container"><input name="name" type="text" placeholder="Введите ваше имя"></div>
+                <div class="form-container"><label for=""> Вы 1 раз?<input name="checkBxodOne" type="checkbox" checked></label></div>
+                <div class="form-container">
+                    <label for="">Введите ваш пол
+                        <select name="pol" placeholder="Введите ваш пол"><option value="М">М</option><option value="Ж">Ж</option> </select>
+                    </label>
+                </div>
+                <div class="form-container"><textarea name="comment" placeholder="Комментарии" name="" id="" cols="30" rows="10"></textarea></div>
+                <div class="form-container">
+                    <label for="">Как вы узнали о нас?</label>
+                    <div class="container-radio">
+                        <label for="">Социальные сети<input name="about" value="Социальные сети" type="radio" /></label>
+                        <label for="">Знакомых<input name="about" value="Знакомых" type="radio" /></label>
+                    </div>
+                    <button class="cancel">Отмена</button>
+                    <button class="register">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="../js/import-nav.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+</html>

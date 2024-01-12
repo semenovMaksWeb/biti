@@ -1,0 +1,104 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>1</button>     
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, nihil. Hic, cupiditate debitis, labore dignissimos veniam iusto itaque quam nam animi id sed sint. Iure error alias a dolor voluptate.</p>
+    <img width="120" height="120" src="https://javasea.ru/uploads/posts/2018-06/1528881411_fon-iz-cvetnyh-luchey.jpg" >
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia dolorem explicabo quas, ex, modi enim molestias doloribus quidem necessitatibus nostrum alias ab. Voluptatibus voluptates reprehenderit quaerat vel nostrum reiciendis vero!</p>
+    <img width="120" height="120" src="https://javasea.ru/uploads/posts/2018-06/1528881411_fon-iz-cvetnyh-luchey.jpg" >
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sapiente deleniti in totam voluptatum, animi repudiandae vel nisi atque tempora eaque veniam voluptate itaque optio officia dicta inventore aliquam a.</p>
+    <img width="120" height="120" src="https://javasea.ru/uploads/posts/2018-06/1528881411_fon-iz-cvetnyh-luchey.jpg" >
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sit quod quia. Voluptate, sunt distinctio culpa libero saepe nobis quod sint illum! Officiis ut quo earum natus fugit aspernatur est.</p>
+    <img width="120" height="120" src="https://javasea.ru/uploads/posts/2018-06/1528881411_fon-iz-cvetnyh-luchey.jpg" >
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit dolore ducimus placeat atque, esse dicta distinctio culpa. Natus obcaecati tempora fugiat exercitationem reiciendis velit quasi non. Modi ipsum quasi expedita.</p>
+    <img width="120" height="120" src="https://javasea.ru/uploads/posts/2018-06/1528881411_fon-iz-cvetnyh-luchey.jpg" >
+    
+    <script>
+        $("button").click(()=>{
+            $("p").map((i, el)=>{
+                if(i == 2 || i == 4){
+                    console.log(el.style.marginLeft);
+                    if(el.style.marginLeft){
+                       const oldVal =  el.style.marginLeft.slice(0, -2);
+                        el.style.marginLeft = `${+oldVal + 100}pt`;
+                    } else{
+                        el.style.marginLeft = `100pt`;
+                    }
+                }
+            });
+
+        })
+        $("img").click(function(){
+            if(this.style.marginTop){
+                const oldVal =  this.style.marginTop.slice(0, -2);
+                this.style.marginTop = `${+oldVal + 30}pt`;
+            }else{
+                this.style.marginTop = `30pt`;
+            }
+        })
+    </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>1</button>     
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, nihil. Hic, cupiditate debitis, labore dignissimos veniam iusto itaque quam nam animi id sed sint. Iure error alias a dolor voluptate.</p>
+    <img width="120" height="120" src="https://javasea.ru/uploads/posts/2018-06/1528881411_fon-iz-cvetnyh-luchey.jpg" >
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia dolorem explicabo quas, ex, modi enim molestias doloribus quidem necessitatibus nostrum alias ab. Voluptatibus voluptates reprehenderit quaerat vel nostrum reiciendis vero!</p>
+    <img width="120" height="120" src="https://javasea.ru/uploads/posts/2018-06/1528881411_fon-iz-cvetnyh-luchey.jpg" >
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sapiente deleniti in totam voluptatum, animi repudiandae vel nisi atque tempora eaque veniam voluptate itaque optio officia dicta inventore aliquam a.</p>
+    <img width="120" height="120" src="https://javasea.ru/uploads/posts/2018-06/1528881411_fon-iz-cvetnyh-luchey.jpg" >
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sit quod quia. Voluptate, sunt distinctio culpa libero saepe nobis quod sint illum! Officiis ut quo earum natus fugit aspernatur est.</p>
+    <img width="120" height="120" src="https://javasea.ru/uploads/posts/2018-06/1528881411_fon-iz-cvetnyh-luchey.jpg" >
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit dolore ducimus placeat atque, esse dicta distinctio culpa. Natus obcaecati tempora fugiat exercitationem reiciendis velit quasi non. Modi ipsum quasi expedita.</p>
+    <img width="120" height="120" src="https://javasea.ru/uploads/posts/2018-06/1528881411_fon-iz-cvetnyh-luchey.jpg" >
+    
+    <script>
+        $("button").click(()=>{
+            $("p").map((i, el)=>{
+                if(i == 2 || i == 4){
+                    console.log(el.style.marginLeft);
+                    if(el.style.marginLeft){
+                       const oldVal =  el.style.marginLeft.slice(0, -2);
+                        el.style.marginLeft = `${+oldVal + 100}pt`;
+                    } else{
+                        el.style.marginLeft = `100pt`;
+                    }
+                }
+            });
+
+        })
+        $("img").click(function(){
+            if(this.style.marginTop){
+                const oldVal =  this.style.marginTop.slice(0, -2);
+                this.style.marginTop = `${+oldVal + 30}pt`;
+            }else{
+                this.style.marginTop = `30pt`;
+            }
+        })
+    </script>
+</body>
+>>>>>>> c51345fcdb90265f01df58930fb8ebacc5ff995e
+</html>

@@ -1,0 +1,20 @@
+/* Program 1.1 */
+domains
+ where, from,transport = symbol
+ time,price = integer
+
+predicates
+ trip(from, where, transport, price, time)
+
+
+clauses
+ trip(Balakovo,Samara,train,3000, 4).
+ trip(Balakovo,Saratov,train,2000, 3).
+ trip(Balakovo,Marks,bus,1050, 2).
+ trip(Marks,Samara,bus, 1500,3).
+ trip(Marks,Saratov,bus,1000, 1).
+ trip(Saratov,Samara,bus,1000,1).
+ trip(Balakovo, Ufa, train,2000, 7)
+ trip(Samara, Penza, train, 3000, 5).
+ trip(Samara, Penza, bus, 3000, 8).
+ trip(Samara, Kazan, train, 5000, 10).

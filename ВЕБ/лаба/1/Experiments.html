@@ -1,0 +1,38 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="visible">Показать</button>
+    <button class="hidden">Скрыть</button>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div class="MsoNormal">MsoNormal1</div>
+    <div class="MsoNormal">MsoNormal2</div>
+    <div class="MsoNormal">MsoNormal3</div>
+    <div class="MsoNormal">MsoNormal4</div>
+    <div class="MsoNormal">MsoNormal5</div>
+    <script>
+        const MsoNormal = $(".MsoNormal");
+        const buttonVisible = $(".visible");
+        const buttonHidden = $(".hidden");
+        buttonHidden[0].onclick = () => {
+            MsoNormal.map( (i,el) => {
+                el.style = "display: none";
+            });
+        }
+        buttonVisible[0].onclick = () => {
+            MsoNormal.map( (i,el) => {
+                el.style = "display: block";
+            });
+        }
+    </script>
+</body>
+ </html>
+ 

@@ -1,0 +1,25 @@
+% Факты
+agelimit(sport, not). -- у спорта нет ограничения на возраст
+agelimit(fantastic, not). -- у фантастики нет ограничения на возраст
+agelimit(drama, not). -- у драм нет ограничения на возраст
+agelimit(historical, not). -- у исторических фильмов нет ограничения на возраст
+agelimit(horror, yes). -- у хорроров есть ограничения на возраст
+agelimit(fighters, yes). -- у боевиков есть ограничения на возраст
+agelimit(western, yes). -- у Вестерн есть ограничения на возраст
+
+gender(sport, man). -- спорт смотрят мужщины
+gender(fantastic, man).--  фантастику смотрят мужщины
+
+gender(historical, woman). -- исторические фильмы смотрят женщины
+gender(drama, woman). -- драму фильмы смотрят женщины
+
+theme(sport, sport). -- тематика спорт жанр спорт
+theme(sensation, drama). -- тематика чувств жанр драма
+theme(horror, horror). -- тематика ужасов жанр хоррор
+theme(fighters, fighters). --тематика боевиков жанр боевик
+theme(cowboys, western). -- тематика ковбоев жанр вестерн
+
+% Факты
+
+
+ 

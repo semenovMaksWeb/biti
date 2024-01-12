@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.news-block {
+    display: flex;
+    background-color: #dbdbdb;
+    padding: 10px;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.news-title {
+    font-size: 20px;
+    margin: 0 0 10px 5px;
+}
+
+.news-text {
+    margin: 0;
+    text-indent: 30px;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 15px 0;
+}
+
+.form-container {
+    margin-bottom: 10px;
+}
