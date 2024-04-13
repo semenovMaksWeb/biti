@@ -1,0 +1,89 @@
+Table users {
+  id integer [primary key]
+  username varchar [not null]
+  surname varchar [not null]
+  patronymic varchar [not null]
+  id_client integer [not null]
+  password varchar [not null]
+  email varchar [unique, not null]
+  date_create timestamp
+}
+
+Table task {
+  id integer [primary key]
+  thene varchar [not null]
+  message text [not null]
+  id_author integer [not null]
+  id_executor integer [not null]
+  id_categories integer [not null]
+  id_status integer [not null]
+  date_create timestamp
+}
+
+Table history_task {
+    id integer [primary key]
+    message text [not null]
+    id_task integer [not null]
+}
+
+Table categoties_task {
+    id integer [primary key]
+    name varchar [not null]
+    description varchar
+}
+
+Table status_task {
+    id integer [primary key]
+    name varchar [not null]
+    description varchar
+}
+
+Table client {
+    id integer [primary key]
+    username varchar [not null]
+    description varchar
+    address varchar
+    phone integer
+}
+
+
+Table right {
+    id integer [primary key]
+    name varchar [not null]
+    description varchar
+}
+
+Table token {
+  id integer [primary key]
+  token varchar [unique, not null]
+  date_create timestamp
+  date_end timestamp
+}
+
+Table users_token {
+    id integer [primary key]
+    id_token integer [unique, not null]
+    id_users integer [not null]
+}
+
+Table users_right {
+    id integer [primary key]
+    id_right integer [unique, not null]
+    id_users integer [not null]
+}
+
+Ref: users_token.id_users > users.id
+Ref: users_token.id_token > token.id
+
+Ref: users_right.id_users > users.id
+Ref: users_right.id_right > right.id
+
+Ref: users.id_client > client.id
+
+Ref: task.id_author > users.id
+Ref: task.id_executor > users.id
+Ref: task.id_categories > categoties_task.id
+Ref: task.id_status > status_task.id
+
+Ref: history_task.id_task > task.id
+ 
