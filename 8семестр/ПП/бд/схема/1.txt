@@ -58,12 +58,7 @@ Table token {
   token varchar [unique, not null]
   date_create timestamp
   date_end timestamp
-}
-
-Table users_token {
-    id integer [primary key]
-    id_token integer [unique, not null]
-    id_users integer [not null]
+  id_users int
 }
 
 Table users_right {
@@ -72,8 +67,7 @@ Table users_right {
     id_users integer [not null]
 }
 
-Ref: users_token.id_users > users.id
-Ref: users_token.id_token > token.id
+Ref: token.id_users > users.id
 
 Ref: users_right.id_users > users.id
 Ref: users_right.id_right > right.id
