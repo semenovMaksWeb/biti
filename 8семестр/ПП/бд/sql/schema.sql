@@ -1,6 +1,6 @@
 CREATE TABLE "users" (
   "id" integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-  "username" varchar NOT NULL,
+  "name" varchar NOT NULL,
   "surname" varchar NOT NULL,
   "patronymic" varchar NOT NULL,
   "id_client" integer NOT NULL,
@@ -11,7 +11,7 @@ CREATE TABLE "users" (
 
 CREATE TABLE "task" (
   "id" integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-  "thene" varchar NOT NULL,
+  "theme" varchar NOT NULL,
   "message" text NOT NULL,
   "id_author" integer NOT NULL,
   "id_executor" integer NOT NULL,
@@ -29,13 +29,13 @@ CREATE TABLE "history_task" (
 CREATE TABLE "categoties_task" (
   "id" integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   "name" varchar NOT NULL,
-  "description" varchar
+  "description" text
 );
 
 CREATE TABLE "status_task" (
   "id" integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   "name" varchar NOT NULL,
-  "description" varchar
+  "description" text
 );
 
 CREATE TABLE "client" (
@@ -49,7 +49,7 @@ CREATE TABLE "client" (
 CREATE TABLE "right" (
   "id" integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   "name" varchar NOT NULL,
-  "description" varchar
+  "description" text
 );
 
 CREATE TABLE "token" (
@@ -57,12 +57,6 @@ CREATE TABLE "token" (
   "token" varchar UNIQUE NOT NULL,
   "date_create" timestamp,
   "date_end" timestamp
-);
-
-CREATE TABLE "users_token" (
-  "id" integer PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-  "id_token" integer UNIQUE NOT NULL,
-  "id_users" integer NOT NULL
 );
 
 CREATE TABLE "users_right" (

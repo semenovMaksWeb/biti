@@ -1,6 +1,6 @@
 Table users {
   id integer [primary key]
-  username varchar [not null]
+  name varchar [not null]
   surname varchar [not null]
   patronymic varchar [not null]
   id_client integer [not null]
@@ -11,7 +11,7 @@ Table users {
 
 Table task {
   id integer [primary key]
-  thene varchar [not null]
+  theme varchar [not null]
   message text [not null]
   id_author integer [not null]
   id_executor integer [not null]
@@ -29,13 +29,13 @@ Table history_task {
 Table categoties_task {
     id integer [primary key]
     name varchar [not null]
-    description varchar
+    description text
 }
 
 Table status_task {
     id integer [primary key]
     name varchar [not null]
-    description varchar
+    description text
 }
 
 Table client {
@@ -50,7 +50,7 @@ Table client {
 Table right {
     id integer [primary key]
     name varchar [not null]
-    description varchar
+    description text
 }
 
 Table token {
