@@ -1,0 +1,4 @@
+npm install -g create-react-app
+create-react-app .
+npm i react-router
+npm i react-router-dom
