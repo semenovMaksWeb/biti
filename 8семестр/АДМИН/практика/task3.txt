@@ -1,0 +1,141 @@
+    1  whoami
+    2  whoaim
+    3  whoami
+    4  echo "hello world"
+    5  cal
+    6  man cal
+    7  cal -3
+    8  history
+    9  clear
+   10  pwd
+   11  cd /
+   12  cd ..
+   13  pwd
+   14  ls
+   15  ls /var
+   16  cd ~
+   17  ls
+   18  ls -1
+   19  man ls
+   20  cd ~
+   21  mkdir fruits
+   22  cd
+   23  mkdir ~/animals
+   24  touch t
+   25  cd ~/fruits/
+   26  mkdir apple
+   27  mkdir banana
+   28  mkdir pineaple
+   29  mkdir lion
+   30  mkdir ~/animals/cat.txt
+   31  mkdir ~/animals/dog.txt
+   32  mkdir ~/animals/elephant.txt
+   33  stat ~/fruits/apple
+   34  ls b*
+   35  ls
+   36  ls b*
+   37  ls *a
+   38  pwd
+   39  ls b*
+   40  ls [bi]*
+   41  ls b *
+   42  ls b*
+   43  cp etc/passwd ~
+   44  cp /etc/passwd ~
+   45  cat /etc/issue
+   46  cp /etc/passwd ~/fruits/apple
+   47  whoami
+   48  whoaim
+   49  whoami
+   50  echo "hello world"
+   51  date
+   52  cal
+   53  man cal
+   54  cal -3
+   55  history
+   56  clear
+   57  pwd
+   58  cd /
+   59  cd ..
+   60  pwd
+   61  ls
+   62  ls /var
+   63  cd ~
+   64  cd ..
+   65  pwd
+   66  ls
+   67  ls -1
+   68  man ls
+   69  cd ~
+   70  mkdir fruits
+   71  cd /
+   72  mkdir ~/animals
+   73  touch tmp/temp
+   74  cd ~/fruits
+   75  touch apple
+   76  touch banana
+   77  touch pineaple
+   78  touch lion
+   79  state ~/fruits/apple
+   80  stat ~/fruits/apple
+   81  pwd
+   82  touch ~/animals/cat.txt
+   83  touch ~/animals/dog.txt
+   84  touch ~/animals/elephant.txt
+   85  ls b*
+   86  ls [bi]*
+   87  cp /etc/passwd ~
+   88  cat etc/issue
+   89  cat /etc/issue
+   90  cp /etc/issue ~/fruits/apple
+   91  cat ~/fruits/apple
+   92  mv ~/fruits/lion ~/animals
+   93  mv ~/fruits/pineaple pineapple
+   94  wc /etc/passwd
+   95  cd ~
+   96  ls -s /etc/passwd passwd_link
+   97  ln -s /etc/passwd passwd_link
+   98  ln .bash_history history_hard
+   99  ls -l ~/.bash_history
+  100  ls -l ~/*
+  101  rm ~/fruits/apple
+  102  mkdir ~/rmme
+  103  rmdir ~/rmme
+  104  rmdri fruits
+  105  rmdir fruits
+  106  rm -fr fruits
+  107  cat /etc/passwd var/log/boot.log
+  108  cp /etc/init.d/ ~
+  109  cp -r /etc/init.d/ ~
+  110  rm ~/init.d
+  111  rm -fr  ~/init.d
+  112  cut -d: -f1 /etc/passwd | ??
+  113  cut -d: -f1 /etc/passwd | ???
+  114  cut -d: -f1 /etc/passwd | sort
+  115  cut -d: -f1,3,4 /etc/passwd | column -ts: | less
+  116  cut -d: -f1,3,4 --output-delimiter " "  /etc/passwd
+  117  grep :/bin/bash /ect/passwd | wc -l
+  118  grep :/bin/bash /etc/passwd | wc -l
+  119  grep :/bin/bash /etc/passwd | cut -d: -f1,3,4 /etc/passwd | column -ts: | less
+  120  top -b -n1 | sort -k11
+  121  top -b -n1 | tain -n+8 | cut -c7- | tr -s ' ' ' \t' | cut -f11,5
+  122  top -b -n1 | tail -n+8 | cut -c7- | tr -s ' ' ' \t' | cut -f11,5
+  123  cut -d: -f1 /etc/passwd | sort -k1 | tr ":" " "
+  124  cut -d: -f1,2,3 /etc/passwd | sort -k1 | tr ":" " "
+  125  cut -d: -f1,7 /etc/passwd | sort -k1
+  126  apt install -y git
+  127  sudo apt install -y git
+  128  cd usr/share/doc/git
+  129  cd /usr/share/doc/git
+  130  cat copyright | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | grep -v '[^a-z]' | sort | uniq -c | sort -rn | head -5
+  131  tr '[:lower:]' '[:upper:]' < copyright |  tr -d '[:punct:] \n\t' | fold -w1 | sort
+  132  | uniq -c | sort -rn | head -5
+  133  tr -cs '[:alpha:]' '\n' < copyright | less | grep -E ........ | sort | uniq -c | sort -rn | head
+  134  ping ya.ru
+  135  curl wttr.in
+  136  hostname -I
+  137  curl ifconfig.me
+  138  history > task3.txt
+  139  pwd
+  140  cd ~
+  141  history > task3.txt
