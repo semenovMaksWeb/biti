@@ -1,0 +1,74 @@
+ps -e
+ps -ef
+ps -eF
+ps -ely
+
+ps ax
+ps axu
+
+ps -ejH
+ps-axjf
+
+ps -eLf
+ps axms
+
+ps -eo euser,ruser,suser,fuser,f,comm,label
+ps axZ
+ps -eM
+
+ps -U root -u root u
+
+ps -eo pid,tid,class,rtprio,ni,pri,psr,pcpu,stat,wchan:14,comm
+ps axo stat,euid,ruid,tty,tpgid,sess,pgrp,ppid,pid,pcpu,comm
+ps -Ao pid,tt,user,fname,tmout,f,wchan
+
+ps -C systemd -o pid=
+
+
+Левое
+$ ( while true; do printf "AAA %d " $$ >> ~/test.out; sleep 1; done )
+Ctrl+z
+
+jobs
+ps j
+bg
+jobs
+ps j
+
+( while true; do printf "UUU %d " $$ >> ~/test.out; sleep 1; done )
+jobs
+fg 1
+Ctrl+c
+fg 2
+Ctrl+c
+
+
+Правое
+tail -f ~/test.out
+
+
+Правое 
+
+
+Левое
+( while true; do printf "AAA %d " $$ >> ~/test.out; sleep 1; done ) &
+( while true; do printf "UUU %d " $$ >> ~/test.out; sleep 1; done ) &
+jobs
+
+ps j
+
+
+
+---------------
+cat  /proc/version
+cat  /proc/meminfo
+cat  /sys/evices/system/node/node0/meminfo
+free
+cat /proc/cpuinfo
+cat /proc/uptime
+uptime
+echo $$
+ls -l /proc/self
+ls -ld /proc/$$
+read pid tcomm state other < /proc/$$/stat
+echo "Процесс $pid $tcomm находится в состоянии $state"

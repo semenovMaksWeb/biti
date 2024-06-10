@@ -1,0 +1,18 @@
+ls -l /dev/sda{,[123]}
+lsblk --list
+cat /proc/diskstats
+cat /proc/devices
+dd if=/dev/zero of=./fs.img bs=1M count=10
+losetup --find --show ./fs.img
+losetup --list
+mkfs -t ext4 /dev/loop5
+blkid /dev/loop5
+mount /dev/loop5 /mnt
+mount | grep /mnt
+df -h /mnt
+df -hi /mnt
+umount /dev/loop5
+tune2fs -l /dev/loop5
+losetup --detach /dev/loop5
+losetup --list
+history > filesystems_history.txt
