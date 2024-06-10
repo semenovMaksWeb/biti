@@ -6,6 +6,6 @@ read -p "Введите Команду " COMMAND
 
 case "$COMMAND" in 
     "1") cat /etc/passwd;;
-    "2") read -p "Введите Имя пользователя " USER && echo $USER;;
-    "3") read -p "Введите Имя пользователя " USER && echo $USER;;
+    "2") read -p "Введите Имя пользователя " USER && sudo useradd "$USER";;
+    "3") read -p "Введите Имя пользователя " USER && sudo userdel "$USER";
 esac

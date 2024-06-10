@@ -1,0 +1,52 @@
+  193  ps -e
+  194  ps -ef
+  195  ps -eF
+  196  ps -ely
+  197  ps ax
+  198  ps axu
+  199  ps -ejH
+  200  ps-axjf
+  201  ps -e
+  202  ps -ef
+  203  ps -eF
+  204  ps -ely
+  205  ps ax
+  206  ps axu
+  207  ps -ejH
+  208  ps axjf
+  209  ps -eLf
+  210  ps axms
+  211  ps -eo euser,ruser,suser,fuser,f,comm,label
+  212  ps axZ
+  213  ps -eM
+  214  ps -U root -u root u
+  215  ps -eo pid,tid,class,rtprio,ni,pri,psr,pcpu,stat,wchan:14,comm
+  216  ps axo stat,euid,ruid,tty,tpgid,sess,pgrp,ppid,pid,pcpu,comm
+  217  ps -Ao pid,tt,user,fname,tmout,f,wchan
+  218  ps -C systemd -o pid=
+  219  ( while true; do printf "AAA %d " $$ >> ~/test.out; sleep 1; done )
+  220  jobs
+  221  ps j
+  222  bg
+  223  jobs
+  224  ps j
+  225  ( while true; do printf "UUU %d " $$ >> ~/test.out; sleep 1; done )
+  226  jobs
+  227  fg 1
+  228  fg 2
+  229  ( while true; do printf "AAA %d " $$ >> ~/test.out; sleep 1; done ) &
+  230  ( while true; do printf "UUU %d " $$ >> ~/test.out; sleep 1; done ) &
+  231  jobs
+  232  cat  /proc/version
+  233  cat  /proc/meminfo
+  234  cat  /sys/evices/system/node/node0/meminfo
+  235  free
+  236  cat /proc/cpuinfo
+  237  cat /proc/uptime
+  238  uptime
+  239  echo $$
+  240  ls -l /proc/self
+  241  ls -ld /proc/$$
+  242  read pid tcomm state other < /proc/$$/stat
+  243  echo "Процесс $pid $tcomm находится в состоянии $state"
+  244  history > task5.txt
