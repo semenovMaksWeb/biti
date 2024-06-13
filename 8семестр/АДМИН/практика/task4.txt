@@ -1,0 +1,51 @@
+  1 cd ~
+  2 grep vagrant /etc/passwd
+  3 sudo grep vagrant /etc/shadow
+  4 sudo useradd -s /bin/sh  -e 2024-12-13 user01
+  5 sudo passwd user01
+  6 su user01
+  7 whoami
+  8 cd ~
+  9 ls
+  10 chfn -f "Тестовый пользователь 1" user01
+  11 finger user01
+  12 exit
+  13 su root1
+  14 sudo usermod -aG sudo user01
+  15 su user01
+  16 sudo -l -U user01
+  17 sudo groupadd group01
+  18 sudo usermod -aG group01 user01
+  19 sudo usermod -aG group01 vagrant
+  20 sudo groupmems
+  21 cd ~
+  22 mkdir test
+  23 cd test
+  24 touch file
+  25 chmod 000 file
+  26 echo "text" > file
+  27 cat file
+  28 sudo chmod 200 file
+  29 ls -l file
+  30 echo "test" > file
+  31 cat file
+  32 sudo chmod 240 file
+  33 ls -l file
+  34 cat file
+  35 sudo chmod 640 file
+  36 ls -l file
+  37 cat file
+  38 mkdir ~/dir
+  39 touch ~/dir/new_file
+  40 cd ~/dir
+  41 ls
+  42 sudo chmod 666 new_file
+  43 ls -l
+  44 umask u=rw,go=
+  45 touch file1
+  46 ls -l
+  47 umask a=rw
+  48 touch file2
+  49 ls -l
+  50 cat ~/test/file
+  51 cat ~/test/file
